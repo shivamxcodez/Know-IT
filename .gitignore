@@ -1,0 +1,29 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Environment / secrets
+.env
+.env.*
+config.php
+database.php
+
+# Composer
+/vendor/
+
+# Cache / logs
+/cache/
+/storage/
+logs/
+*.log
+
+# Uploads (if generated at runtime)
+uploads/
+
+# Temporary files
+tmp/
