@@ -12,6 +12,7 @@ Thumbs.db
 .env.*
 config.php
 database.php
+db.php
 
 # Composer
 /vendor/
