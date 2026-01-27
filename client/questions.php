@@ -15,6 +15,9 @@ else if(isset($_GET['u-id'])){
 else if(isset($_GET['latest'])){
     $query="select * from questions order by id DESC";
 }
+else if(isset($_GET['search'])){
+    $query="select * from questions where title like '%".$_GET['search']."%'";
+}
 else{
 $query="select * from questions";
 }
