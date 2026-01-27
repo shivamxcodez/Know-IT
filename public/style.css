@@ -31,3 +31,16 @@ a {
     display: flex;
     justify-content: space-between;
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}

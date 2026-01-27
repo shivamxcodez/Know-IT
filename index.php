@@ -21,7 +21,7 @@
 
     }
     else if(isset($_GET['q-id'])){
-        $qid = $_GET['q-id'];
+        $qid = $_SESSION['user']['user_id'];
         include('./client/question-details.php');
 
     }

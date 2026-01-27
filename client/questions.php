@@ -5,12 +5,16 @@
 <?php
 include("./common/db.php");
 $uid=NULL;
+$limit = 5; // questions per page
+$page = isset($_GET['page']) && $_GET['page'] > 0 ? (int)$_GET['page'] : 1;
+$offset = ($page - 1) * $limit;
+
 if(isset($_GET['c-id'])){
     $cid = $_GET['c-id'];
     $query="select * from questions where category_id = $cid";
 }
 else if(isset($_GET['u-id'])){
-    $uid = $_GET['u-id'];
+    $uid = $_SESSION['user']['user_id'];
     $query="select * from questions where user_id = $uid";
 }
 else if(isset($_GET['latest'])){
