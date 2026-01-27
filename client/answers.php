@@ -6,7 +6,7 @@
     $result = $conn->query($query);
     foreach($result as $row){
         $answer = $row['answer'];
-        echo "<div class='row'><p class='answer_wrapper'>$answer</p> </div>";
+        echo "<div class='row'><p class='answer-wrapper'>$answer</p> </div>";
     }
     ?>
 </div>

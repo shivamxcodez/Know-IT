@@ -25,6 +25,11 @@
         include('./client/question-details.php');
 
     }
+    else if(isset($_GET['c-id'])){
+        $cid = $_GET['c-id'];
+        include('./client/questions.php');
+
+    }
     else{
     include('./client/questions.php');
     }

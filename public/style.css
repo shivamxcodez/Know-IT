@@ -22,8 +22,8 @@ a {
     color: rgb(36, 80, 97) !important;
     text-decoration: none;
 }
-.answer_wrapper{
-    /* border-bottom: 1px solid #ddd;
-    margin-bottom: 100px;
-    padding: 5px; */
+.answer-wrapper{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 20px;
 }
