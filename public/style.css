@@ -8,3 +8,22 @@ a {
     margin-top: 15px;
     text-align: center;
 }
+.question-list{
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+}
+.question-list h4{
+    margin: 0;
+    padding: 0;
+}                                                   
+.question-list a{
+    font-size: 18px;
+    color: rgb(36, 80, 97) !important;
+    text-decoration: none;
+}
+.answer_wrapper{
+    /* border-bottom: 1px solid #ddd;
+    margin-bottom: 100px;
+    padding: 5px; */
+}
