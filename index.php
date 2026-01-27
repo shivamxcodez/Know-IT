@@ -30,6 +30,15 @@
         include('./client/questions.php');
 
     }
+    else if(isset($_GET['u-id'])){
+        $cid = $_GET['u-id'];
+        include('./client/questions.php');
+
+    }
+    else if(isset($_GET['latest'])){
+        include('./client/questions.php');
+
+    }
     else{
     include('./client/questions.php');
     }

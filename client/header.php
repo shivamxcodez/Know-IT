@@ -15,6 +15,9 @@
           <li class="nav-item">
           <a class="nav-link" href="?ask=true">Ask A Question</a>
         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="?u-id=<?php echo $_SESSION['user']['user_id']?>">My Question</a>
+        </li>
         <?php }?>
         <?php 
         if(!$_SESSION['user']['username']){ ?>
@@ -29,7 +32,7 @@
           <a class="nav-link" href="#">Category</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Latest Question</a>
+          <a class="nav-link" href="?latest=true">Latest Question</a>
         </li>
       </ul>
     </div>
