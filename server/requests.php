@@ -89,6 +89,18 @@ if(isset($_POST['signup'])){
     }
     }
 
+    elseif (isset($_GET['delete'])){
+        ECHO $qid=$_GET['delete'];
+        $query= $conn->prepare("delete from questions where id = $qid"); 
+        $result=$query->execute();
+        if($result){
+            header("Location: /KNOWIT");
+        }
+        else{
+            echo "Question not deleted!!";
+        }
+    }
+
 
 
 ?>
